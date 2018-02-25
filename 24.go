@@ -70,7 +70,7 @@ func calc(result float64, candidate []float64) (string, int) {
 			if try != "N" {
 				left := ""
 				right := ""
-				if priority[i] > priority[p] {
+				if priority[i] > priority[p] || (priority[i]==priority[p] &&(i==1 || i==3)){
 					left = "("
 					right = ")"
 				}
